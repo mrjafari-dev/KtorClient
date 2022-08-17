@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization'
 }
 
 android {
@@ -71,4 +72,7 @@ dependencies {
 
 // Logging
     implementation "io.ktor:ktor-client-logging:$ktor_version"
+    def serialization_version = '1.3.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization_version"
+
 }

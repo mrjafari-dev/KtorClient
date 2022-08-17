@@ -14,13 +14,13 @@ class PostServiceImp(
             return try {
                 client.get { url(HttpRouts.POSTS) }
             }catch (e : RedirectResponseException){
-                println("Error :${e.response.status.description} ")
+                println("Error 33:${e.response.status.description} ")
                 emptyList()
             }catch (e : ClientRequestException){
-                println("Error :${e.response.status.description} ")
+                println("Error 22:${e.response.status.description} ")
                 emptyList()
             }catch (e : ServerResponseException){
-                println("Error :${e.response.status.description} ")
+                println("Error 11:${e.response.status.description} ")
                 emptyList()
             }
     }
@@ -33,13 +33,13 @@ class PostServiceImp(
                 body =postRequest
             }
         }catch (e : RedirectResponseException){
-            println("Error :${e.response.status.description} ")
+            println("Error dfgdg:${e.response.status.description} ")
             null
         }catch (e : ClientRequestException){
-            println("Error :${e.response.status.description} ")
+            println("Error dfgdg:${e.response.status.description} ")
             null
         }catch (e : ServerResponseException){
-            println("Error :${e.response.status.description} ")
+            println("Error fdgfg:${e.response.status.description} ")
             null
         }
     }

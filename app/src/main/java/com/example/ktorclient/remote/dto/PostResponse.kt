@@ -1,11 +1,15 @@
 package com.example.ktorclient.remote.dto
 
+import androidx.annotation.Keep
 import kotlinx.serialization.Serializable
 
+@Keep
 @Serializable
 data class PostResponse(
-    val body :String,
-    val title :String ,
-     val id :Int,
-    val userId :Int
+    val userId :Int,
+    val id :Int,
+    val title :String,
+    val body :String ,
+
+
 )
